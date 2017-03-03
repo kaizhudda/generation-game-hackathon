@@ -56,9 +56,9 @@ nav a{color: #4A8DDD;}
 nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px solid #ddd;}
 nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
 .logo1 {
-    width: 90px;
+    width: 95px;
     padding: 6px;
-    height: 45px;
+    height: 55px;
     margin-left: 7px;
     margin-top: 5px;
 }
@@ -1805,7 +1805,7 @@ div.scrollmenu a:hover {
   </head>
   <body>
     <nav class="nav-border">
-    <amp-img class="logo1" src="transparentlogo.png" width="527" height="193" layout="responsive">
+    <amp-img class="logo1" src="transparentlogo1.png" width="527" height="193" layout="responsive">
 </amp-img>
     <ul>
       <li>
@@ -1824,27 +1824,27 @@ div.scrollmenu a:hover {
      </amp-iframe>
   <div class="row scroll-new-row">
 <div class="scrollmenu">
-<div class="scrol122 home1">
+<div class="scrol122 home1" id="moveHome">
     <amp-img class="house" src="house.png" width="527" height="193" layout="responsive">
 </amp-img>
   <a href="#home">Move Home</a>
 </div>
-<div class="scrol122 home1">
+<div class="scrol122 home1" id="lpg">
 <amp-img class="house" src="lpg.png" width="527" height="193" layout="responsive">
 </amp-img>
   <a href="#home">Order LPG</a>
 </div>
-<div class="scrol122 home1">
+<div class="scrol122 home1" id="pricing">
 <amp-img class="house" src="price.png" width="527" height="193" layout="responsive">
 </amp-img>
   <a href="#home">Pricing/Plans</a>
 </div>
-<div class="scrol122 home1">
+<div class="scrol122 home1" id="outage">
 <amp-img class="house" src="power.png" width="527" height="193" layout="responsive">
 </amp-img>
   <a href="#home">Power Outage</a>
 </div>
-<div class="scrol122 home1">
+<div class="scrol122 home1" id="offers">
 <amp-img class="house" src="sale.png" width="527" height="193" layout="responsive">
 </amp-img>
   <a href="#home">Current Offers</a>
@@ -1857,3 +1857,13 @@ div.scrollmenu a:hover {
   </body>
 
 </html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#outage").click(function() {
+		$(".wc-textbox").child().val("power outage");
+		$(".wc-send").click();
+	});
+})
+	
+</script>
