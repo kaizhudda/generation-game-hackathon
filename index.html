@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <title>Hello, AMPs</title>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -24,7 +25,7 @@
     .container-fluid{padding:10px;}
 /* 40px padding top for the top menu*/
 body {
-    padding: 387px 15px 4px 15px;
+    padding: 85px 15px 4px 15px;
     overflow: hidden;
 }
 /* fixed top menu has a 40px height*/
@@ -55,9 +56,12 @@ nav ul:hover  ~ #closemenu{transform: translate3d( 0, 40px, 0 );-webkit-transfor
 nav a{color: #4A8DDD;}
 nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px solid #ddd;}
 nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
-	.logo1 {
+.logo1 {
     width: 90px;
-    padding: 7px;
+    padding: 6px;
+    height: 45px;
+    margin-left: 7px;
+    margin-top: 5px;
 }
 .house {
     width: 50px;
@@ -1787,6 +1791,13 @@ div.scrollmenu a:hover {
 .sizebot{
 	height:300px;
 }
+.in{
+	padding:15px;
+}
+.newimg{
+	height:300px;
+}
+
     </style>
 
 
@@ -1806,9 +1817,11 @@ div.scrollmenu a:hover {
     </ul>
   </nav>
   <div class="item col-12">
-<amp-iframe class="sizebot" width="600" height="400" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" src="https://webchat.botframework.com/embed/GenerationGameBot?s=ZmughzIN7R4.cwA.6Nc.zwHJOdKbtSufpeIRSh9JV4khcSccWjFHaHESs6i-mBY">
+
+
+   <amp-iframe class="sizebot" width="500" height="281" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://webchat.botframework.com/embed/GenerationGameBot?s=ZmughzIN7R4.cwA.6Nc.zwHJOdKbtSufpeIRSh9JV4khcSccWjFHaHESs6i-mBY"">
+    <amp-img layout="fill" src="https://webchat.botframework.com/embed/GenerationGameBot?s=ZmughzIN7R4.cwA.6Nc.zwHJOdKbtSufpeIRSh9JV4khcSccWjFHaHESs6i-mBY"" placeholder></amp-img>
   </amp-iframe>
- 
   <div class="row scroll-new-row">
 <div class="scrollmenu">
 <div class="scrol122 home1">
@@ -1842,4 +1855,10 @@ div.scrollmenu a:hover {
 </div>
 </div>
   </body>
+
 </html>
+   <script>
+     window.onload = function pre-loader() {
+        document.getElementByClassName('sizebot').className = 'in';
+     };
+ </script>
