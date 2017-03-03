@@ -22,8 +22,9 @@
     .heloo{text-align:40px;}
     .container-fluid{padding:10px;}
 /* 40px padding top for the top menu*/
-body{padding:40px 32px 4px 32px;}
-
+body {
+    padding: 60px 15px 4px 15px;
+}
 /* fixed top menu has a 40px height*/
 nav{height:50px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
 
@@ -55,6 +56,12 @@ nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
 	.logo1 {
     width: 90px;
     padding: 7px;
+}
+.house{
+	width:20px;
+	height: 20px;
+	padding:6px;
+	margin-left:22px;
 }
     .nab-border{
     border-bottom: 2px solid #F58025 ;
@@ -1748,7 +1755,7 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-    background-color: #777;
+    background-color: #transparent;
 }
 .scroll-new-row{
 	padding-top:10px;
@@ -1761,6 +1768,9 @@ div.scrollmenu a:hover {
     text-decoration: none;
     border-right: 1px solid #eeeeee;
     width:85px;
+}
+.home1:hover{
+	background-color: #eee;
 }
     </style>
 
@@ -1786,15 +1796,23 @@ div.scrollmenu a:hover {
   <div class="row scroll-new-row">
 <div class="scrollmenu">
 <div class="scrol122 home1">
+    <amp-img class="house" src="house.png" width="527" height="193" layout="responsive">
+</amp-img>
   <a href="#home">Home</a>
 </div>
 <div class="scrol122 home1">
+<amp-img class="house" src="lpg.png" width="527" height="193" layout="responsive">
+</amp-img>
   <a href="#home">LPG</a>
 </div>
 <div class="scrol122 home1">
+<amp-img class="house" src="price.png" width="527" height="193" layout="responsive">
+</amp-img>
   <a href="#home">Pricing</a>
 </div>
 <div class="scrol122 home1">
+<amp-img class="house" src="power.png" width="527" height="193" layout="responsive">
+</amp-img>
   <a href="#home">Power</a>
 </div>
 
