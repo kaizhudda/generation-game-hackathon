@@ -1,0 +1,48 @@
+.main-logo{
+	width:55px;
+}
+.different-padding{
+	padding:7px 7px !important;
+}
+.navbar.navbar-default {
+    border-bottom: 2px solid #F58025;
+}
+.chat-bot.container {
+    height: 310px;
+    background-color: #eeeeee;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.20);
+}
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    height: 100px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.20);
+
+
+}
+
+div.scrollmenu a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: -5px;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+.scroll-new-row{
+	padding-top:10px;
+}
+.scrol122{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-right: 1px solid #eeeeee;
+    width:85px;
+}
