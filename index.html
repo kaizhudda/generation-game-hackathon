@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <title>Hello, AMPs</title>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
@@ -23,10 +24,11 @@
     .container-fluid{padding:10px;}
 /* 40px padding top for the top menu*/
 body {
-    padding: 60px 15px 4px 15px;
+    padding: 387px 15px 4px 15px;
+    overflow: hidden;
 }
 /* fixed top menu has a 40px height*/
-nav{height:50px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
+nav{height:70px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
 
 /* remove bullets and add transition effect */
 nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-in-out;  -webkit-transition: transform .75s ease-in-out;}
@@ -1779,6 +1781,12 @@ div.scrollmenu a:hover {
 .home1:hover{
 	background-color: #eee;
 }
+.botonline{
+	height:300px;
+}
+.sizebot{
+	height:300px;
+}
     </style>
 
 
@@ -1798,9 +1806,9 @@ div.scrollmenu a:hover {
     </ul>
   </nav>
   <div class="item col-12">
-  <div class="chat-bot container ">
-<iframe style="height:300px; width:100%" src='https://webchat.botframework.com/embed/GenerationGameBot?s=ZmughzIN7R4.cwA.6Nc.zwHJOdKbtSufpeIRSh9JV4khcSccWjFHaHESs6i-mBY'></iframe>
-  </div>
+<amp-iframe class="sizebot" width="600" height="400" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" src="https://webchat.botframework.com/embed/GenerationGameBot?s=ZmughzIN7R4.cwA.6Nc.zwHJOdKbtSufpeIRSh9JV4khcSccWjFHaHESs6i-mBY">
+  </amp-iframe>
+ 
   <div class="row scroll-new-row">
 <div class="scrollmenu">
 <div class="scrol122 home1">
