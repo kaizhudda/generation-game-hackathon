@@ -3,7 +3,8 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Hello, AMPs</title>
+    <title>GENBO</title>
+     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -28,7 +29,7 @@ body {
     overflow: hidden;
 }
 /* fixed top menu has a 40px height*/
-nav{height:70px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
+nav{height:77px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
 
 /* remove bullets and add transition effect */
 nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-in-out;  -webkit-transition: transform .75s ease-in-out;}
@@ -56,11 +57,21 @@ nav a{color: #4A8DDD;}
 nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px solid #ddd;}
 nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
 .logo1 {
-    width: 95px;
+    width: 81px;
     padding: 6px;
-    height: 55px;
-    margin-left: 7px;
-    margin-top: 5px;
+    height: 58px;
+    margin-left: 11px;
+    margin-top: 10px;
+    z-index: 33333;
+}
+.logo2 {
+    width: 15px;
+    padding: 6px;
+    height: 10px;
+    margin-right: 22px;
+    margin-top: 21px;
+    float: right;
+    display: inline-block;
 }
 .house {
     width: 50px;
@@ -1796,17 +1807,37 @@ div.scrollmenu a:hover {
 .newimg{
 	height:300px;
 }
-.get-started{
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	text-align: left;
-	text-transform: uppercase;
+.get-started {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+    margin:0;
+    padding-top:10px;
 }
 .glyphicon-star:before {
   content: "\e006";
 }
 .glyphicon-star-empty:before {
   content: "\e007";
+}
+.newh {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left:15px;
+}
+.top-text{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+.nav-right{
+	float:right;
+}
+.rowtoppad{
+	border-top: 1px solid #eeeeee;
 }
     </style>
 
@@ -1818,24 +1849,24 @@ div.scrollmenu a:hover {
     <nav class="nav-border">
     <amp-img class="logo1" src="transparentlogo1.png" width="527" height="193" layout="responsive">
 </amp-img>
-    <ul>
-      <li>
-        <ul>
-          
-        </ul>
-      </li>
-    </ul>
+	<nav class="nav-right">
+	<amp-img class="logo2" src="hamb.png" width="527" height="193" layout="responsive">
+</amp-img>
+	</nav>
   </nav>
   <div class="item col-12">
-
+	  <div class="row">
+		  <div class="container">
+		  	<p class="top-text">Hi, welcome to Genesis Energy. I'm GENBO, your energy assistant. I can help you find what you want on our site, either by typing or voice</p>
+		  </div>
+	  </div>
 
    <amp-iframe class="sizebot" width="500" height="281" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://gen-voice.azurewebsites.net/samples/?s=hqXDZciKIXg.cwA.nUs.c-AYr_OYtmNkSsFHSyeMoq927SFRx_VO1IX-oL6jkhY"> 
 
     <amp-img layout="fill" src="https://gen-voice.azurewebsites.net/samples/?s=hqXDZciKIXg.cwA.nUs.c-AYr_OYtmNkSsFHSyeMoq927SFRx_VO1IX-oL6jkhY" placeholder></amp-img>
      </amp-iframe>
-     <div class="row">
-     <i class="fa fa-star" aria-hidden="true"></i>
-
+     <div class="row rowtoppad">
+<amp-img class="newh" src="star.png" width="527" height="193" layout="responsive"></amp-img>
      <p class="get-started">Let's Get Started!</p>
      </div>
   <div class="row scroll-new-row">
@@ -1871,7 +1902,7 @@ div.scrollmenu a:hover {
 </div>
 </div>
   </body>
-
+    
 </html>
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
