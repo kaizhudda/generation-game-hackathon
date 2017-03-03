@@ -25,7 +25,7 @@
 body{padding:40px 32px 4px 32px;}
 
 /* fixed top menu has a 40px height*/
-nav{height:50px;border-bottom:1px solid #ddd;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
+nav{height:50px;border-bottom:2px solid #F58025;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
 
 /* remove bullets and add transition effect */
 nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-in-out;  -webkit-transition: transform .75s ease-in-out;}
@@ -54,14 +54,17 @@ nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px s
 nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
 	.logo1 {
     width: 90px;
-    padding: 3px;
+    padding: 7px;
+}
+    .nab-border{
+    border-bottom: 2px solid #F58025 ;
 }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   </head>
   <body>
-    <nav>
+    <nav class="nav-border">
     <amp-img class="logo1" src="transparentlogo.png" width="527" height="193" layout="responsive">
 </amp-img>
     <ul>
