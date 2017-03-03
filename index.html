@@ -25,7 +25,7 @@
 body{padding:40px 32px 4px 32px;}
 
 /* fixed top menu has a 40px height*/
-nav{height:40px;border-bottom:1px solid #ddd;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
+nav{height:50px;border-bottom:1px solid #ddd;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
 
 /* remove bullets and add transition effect */
 nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-in-out;  -webkit-transition: transform .75s ease-in-out;}
@@ -34,7 +34,7 @@ nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-
 nav > ul >li{position: fixed;left:36px;top:0px;z-index:991;line-height:40px;}
 
 /* initial state: hide the menu */
-nav > ul > li > ul{position:fixed;top:0;left:-240px;width:240px;bottom:0;background:#fefefe;z-index:990;padding-top:36px;border-right:1px solid #ddd;  }
+
 
 /* Hover state, the menu button has been clicked*/
 
@@ -52,22 +52,25 @@ nav ul:hover  ~ #closemenu{transform: translate3d( 0, 40px, 0 );-webkit-transfor
 nav a{color: #4A8DDD;}
 nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px solid #ddd;}
 nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
+.i-amphtml-element.i-amphtml-layout-responsive.i-amphtml-layout-size-defined.i-amphtml-layout {
+    width: 90px;
+    padding: 3px;
+}
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   </head>
   <body>
     <nav>
+    <amp-img src="transparentlogo.png" width="527" height="193" layout="responsive">
+</amp-img>
     <ul>
-      <li>&#9776;
+      <li>
         <ul>
-          <li id="header">Menu</li>
-          <li><a href="/">ampready></a></li>
-          <li><a href="/getting-started"/>getting started</a></li>
+          
         </ul>
       </li>
     </ul>
-    <div id="closemenu">&#215;</div>
   </nav>
   <h1>Welcome to the mobile web</h1>
   </body>
