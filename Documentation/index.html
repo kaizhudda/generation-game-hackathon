@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VlettersAMP - Documentation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="theme-sphere.com">
+	
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/docs.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+	
+	<style type="text/css">
+		body {
+			padding-top: 0;
+			line-height: 24px; 
+		}
+
+		h1, h2, h3, h4 { line-height: 60px; }
+		ul, ol, pre, dl, dd { margin-bottom: 1em; } 
+		
+		li, dt, dd { line-height: inherit; }
+
+		.bs-docs-sidenav a { color: #fff; }
+		.container {
+			margin: 0;
+			margin-left: 320px; 
+			width: auto;
+			max-width: 1250px;
+		}
+		
+		.row { width: 100%; }
+		
+		.bs-docs-sidenav {
+			margin: 0 0;
+			padding: 0;
+			box-shadow: 0;
+			-webkit-box-shadow: 0;
+			left: 0;
+			top:-10px;
+			right: auto;
+			bottom: -5px;
+			left: 0;
+			background-color: #1f253d;
+			border-right: 5px solid #d32e48;
+			padding-top: 150px; 
+			position: fixed;
+			overflow-y: auto;
+			border-radius:none!important
+		}
+		
+		.bs-docs-sidenav.affix { top: -10px }
+		.bs-docs-sidenav > li:first-child > a, .bs-docs-sidenav > li:last-child > a { border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; }
+		.bs-docs-sidenav > li > a { 
+			border-right: 0;
+			padding-left: 20px;
+			background: #394264;
+						border-radius:none!important
+		}
+
+		section { padding-top: 100px; }
+		
+		section li {
+			padding: 2px;
+		}
+
+		.label { margin-right: 5px; }
+
+		.sc-sample {
+			max-height: 200px;
+			overflow: auto;
+		}
+
+		h1.logo {
+			margin-top: -120px;
+			margin-bottom: 30px;
+			margin-left: 15px;
+			margin-right:15px;
+			font-size: 30px;
+			display:block;
+			color:#fff;
+			line-height:1.2em;
+			font-weight:bold;
+			width:auto;
+			text-align:center;
+		}
+
+		.about-online { 
+			position: fixed;
+			margin-left: 259px;
+			padding: 10px;
+			padding-left: 95px;
+			top: 0;
+			width: 100%;
+			display: none; 
+		}
+
+		.about-online a { font-weight: bold; color: #2c3e50; }
+		
+		::-webkit-scrollbar { width: 4px; }
+		::-webkit-scrollbar-track { background-color: #1f253d; }
+		::-webkit-scrollbar-thumb { background-color: #ece6da; }
+		
+		body::-webkit-scrollbar { width: 8px; } 
+
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset-top="0">
+
+	<div class="container">
+
+		<div class="bs-docs-sidebar">
+			
+			<ul class="nav-list nav bs-docs-sidenav">
+				<li><h1 class="logo">VlettersAMP</h1></li>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#headoptions">Header Options</a></li>
+				<li><a href="#menu-setup">Menu Setup</a></li>				
+				<li><a href="#widgets">Widget</a></li>
+				<li><a href="#customizations">Customizations</a></li>
+				<li><a href="#disqus-comment">Disqus Comment</a></li>				
+				<li><a href="#credits">Copyright &amp; Credits</a></li>
+			</ul>
+		</div>
+
+		<div class="row">
+
+			<div class="span9">
+
+
+				<section id="introduction">
+					<div class="page-header">
+						<h1>VlettersAMP - Documentation!</h1>
+					</div>
+
+					<h3>Thanks for Using</h3>
+
+					<p>First of all, thank you for download and using this theme. To make your experience pleasant, we've added as much info as needed in this documentation. If you're stuck with anything, please refer to support forums.</p>
+
+					<ul>
+						<li>Created: Nov/01/2016</li>
+						<li>Modified: Nov/01/2016</li>						
+						<li>Created By: Bung Frangki</li>
+						<li>Published:  www.themeindie.com</li>
+						<li>Contact Support: <a href="http://www.themeindie.com/p/contact-us.html">Contact us</a></li>	
+						<li>Version: 1.0.0</li>
+
+					</ul>
+
+					<h4>Descripton:</h4>
+<p>VlettersAMP is a Accelerated Mobile Pages (AMP) for Blogger Template. It's a simple design, just few seconds to load and get everything running. It's just share for free. This temlate configurated and improved to be super SEO friendly, and so mobile-friendly too. VlettersAMP is responsive design, up to 230px of devices.</p>
+					
+					<h4>Change Log:</h4>
+					<pre class="prettyprint lang-html">Version:1.0
+Initial Release</pre>
+
+					<h4>Important code:</h4>
+					<p>Some important code in template HTML has been changed:</p>
+					<pre class="prettyprint lang-html">
+- &lt;head&gt; changed into &amp;lt;head&amp;gt;
+- &lt;/head&gt; changed into &amp;lt;/head&amp;gt;&amp;lt;!--&lt;head/&gt;--&amp;gt;
+- &lt;/body&gt; changed into &amp;lt;!--&lt;/body&gt;--&amp;gt;&amp;lt;/body&amp;gt;
+</pre>
+
+
+				</section>
+
+
+
+				<section id="installation">
+					<div class="page-header">
+						<h1>Installation</h1>
+					</div>
+
+
+					<p>When you are ready to install a theme, you must first upload the theme file. The theme file can be uploaded in one way .</p>
+
+					<h3>a. Upload File</h3>
+
+					<ol>
+						<li>Open your purchase folder, you will see a folder with name <strong>***-template-xml</strong>. Open it, and find the newest version with name <strong>***-version-X-X.xml</strong>.<p/>
+						</li>
+						<li>Open the XML file with a text editor (Notepad or something like that). Then select all text and copy (Ctrl+A, Ctrl+C in Window).<p/>
+						<li>Return to your blog <strong>dashboard</strong>, access your <span class="label-template">Template</span> menu, click <span class="label label-edit">Edit HTML</span><p/>
+						</li>
+						<li>In Editor HTML window, select all old code and paste the new code that you copied from the release file into code field. Then, click <span class="label label-save">Save template</span>.<p/>
+						</li>
+					</ol>					
+					
+					</li>					
+					</ol>					
+					<h3>b. Update Theme (Version 1.1 above)</h3>
+					<p>If you are already use Version 1.0.0 and want to update it to version 1.x.x or 1.1.x. Just Follow This step</p>
+					<ol>
+						<li>Access your blog <strong>dashboard</strong> &gt; <span class="label-template">Template</span></li>
+						<li>Click <span class="label label-edit">Backup/Restore</span> button (Top Right)</li>
+						<li>Click <span class="label label-edit">Choose File</span> button. Find where the "vlettersAMP-version-x.x.x.xml” file location</li>
+						<li>Then Click <span class="label label-save">Upload</span></li>
+					</ol>					
+					<h3>c. Blog Setting (Activate Blog Post Type)</h3>
+					<p>This step to make blog post type enable.</p>
+					<ol>
+					<li>Access your blog <strong>dashboard</strong> &gt; <span class="label-setting">Settings</span> &gt; <strong>Other</strong>. In <strong>Site feed</strong> - <strong>Allow Blog Feed</strong> choose <strong>Full</strong>.<p/></li>
+					<li>then <strong>Enable Title Links and Enclosure Links</strong> change to <strong>Yes</strong><p/>
+					<li>Then Click <span class="label label-save">Save settings</span>.</li>					
+					</ol>
+					
+					<h3>d. Setting Blog Logo or Icon</h3> 						 			
+						 <ol>
+						 <li>On Blogger Dashbord Click <span class="label-template">Template</span></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint">
+&lt;link href=&#039;https://4.bp.blogspot.com/-XoYVj_ny8ys/WCGuacPhoxI/AAAAAAAANks/0gMrbTXd_KY6oG25R5VuLUJtQ-wXAE-CgCLcB/s57/logo-AMP-1.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;57x57&#039;/&gt;
+&lt;link href=&#039;https://4.bp.blogspot.com/-XoYVj_ny8ys/WCGuacPhoxI/AAAAAAAANks/0gMrbTXd_KY6oG25R5VuLUJtQ-wXAE-CgCLcB/s60/logo-AMP-1.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;60x60&#039;/&gt;
+&lt;link href=&#039;https://4.bp.blogspot.com/-XoYVj_ny8ys/WCGuacPhoxI/AAAAAAAANks/0gMrbTXd_KY6oG25R5VuLUJtQ-wXAE-CgCLcB/s72/logo-AMP-1.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;72x72&#039;/&gt;
+&lt;link href=&#039;https://4.bp.blogspot.com/-XoYVj_ny8ys/WCGuacPhoxI/AAAAAAAANks/0gMrbTXd_KY6oG25R5VuLUJtQ-wXAE-CgCLcB/s76/logo-AMP-1.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;76x76&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s114/logo-AMP-2.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;114x114&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s120/logo-AMP-2.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;120x120&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s144/logo-AMP-2.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;144x144&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s152/logo-AMP-2.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;152x152&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s180/logo-AMP-2.png&#039; rel=&#039;apple-touch-icon&#039; sizes=&#039;180x180&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-GacajTM4kz4/WCGuaS58QWI/AAAAAAAANk0/Y4jJLkca3usJey8gu1CouQlN9aYsQSNEwCLcB/s192/logo-AMP-2.png&#039; rel=&#039;icon&#039; sizes=&#039;192x192&#039; type=&#039;image/png&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-ults7faQkn4/WCGuaYEm6gI/AAAAAAAANkw/x19SBwnRbdEHaH_Rp1Ed0DseSHk84DncgCLcB/s32/logo-AMP-real.png&#039; rel=&#039;icon&#039; sizes=&#039;32x32&#039; type=&#039;image/png&#039;/&gt;
+&lt;link href=&#039;https://1.bp.blogspot.com/-ults7faQkn4/WCGuaYEm6gI/AAAAAAAANkw/x19SBwnRbdEHaH_Rp1Ed0DseSHk84DncgCLcB/s96/logo-AMP-real.png&#039; rel=&#039;icon&#039; sizes=&#039;96x96&#039; type=&#039;image/png&#039;/&gt;
+&lt;meta content=&#039;https://1.bp.blogspot.com/-ults7faQkn4/WCGuaYEm6gI/AAAAAAAANkw/x19SBwnRbdEHaH_Rp1Ed0DseSHk84DncgCLcB/s144/logo-AMP-real.png&#039; name=&#039;msapplication-TileImage&#039;/&gt;
+						 </pre>
+						 						 </li>
+												 </ol>
+			<h3>e. Setting Meta Tag and Open Graph</h3> 	
+					
+						  <pre class="prettyprint">
+&lt;link href=&#039;https://plus.google.com/XXXXX&#039; rel=&#039;me&#039;/&gt;
+&lt;link href=&#039;https://plus.google.com/XXXXX&#039; rel=&#039;publisher&#039;/&gt;
+&lt;meta content=&#039;XXXXX&#039; name=&#039;google-site-verification&#039;/&gt;
+&lt;meta content=&#039;XXXXX&#039; property=&#039;fb:admins&#039;/&gt;
+&lt;meta content=&#039;XXXXX&#039; property=&#039;fb:profile_id&#039;/&gt;
+&lt;meta content=&#039;XXXXX&#039; name=&#039;Author&#039;/&gt;
+&lt;meta content=&#039;https://www.facebook.com/XXXXX&#039; property=&#039;article:author&#039;/&gt;
+&lt;meta expr:content=&#039;data:blog.title&#039; name=&#039;twitter:site&#039;/&gt;
+&lt;meta content=&#039;summary_large_image&#039; name=&#039;twitter:card&#039;/&gt;
+&lt;meta content=&#039;@XXXXX&#039; name=&#039;twitter:creator&#039;/&gt;
+</pre>
+						 <p>Change <strong>XXXXX</strong> with your ID of metadata.</p><br/>
+						 <p><strong>Note:</strong> Before your cards show on Twitter, <strong>you must first have your domain approved</strong>. Fortunately, it's a super-easy process. After you implement your cards, simply enter your sample URL into the validation tool. After checking your markup, select the "<strong>Submit for Approval</strong>" button. Go Here : <a target="_blank" href="https://dev.twitter.com/docs/cards/validation/validator">https://dev.twitter.com/docs/cards/validation/validator</a> for testing and approval</p>					
+ 
+					
+					<h3>f. Optimize SEO</h3> 
+					<h4>Activate Custom Description Each Post</h4>
+			<ol>
+				<li>On Dashbord Click <strong class="setting">Settings</strong></li>
+				<li>Choose <strong>Search preferences</strong></li>
+				<li>on <strong>Meta Tags</strong> Description click <strong>Edit</strong> > Yes > Ok</li>
+				<li>Now you can see Custom Meta tags Area on Post Editor sidebar</li>
+				<li>Every make new post, Fill yours Post Descriptions there<br/>
+				<p>Follow the instructions below:</p>
+				<img src='assets/img/setting-seo.png'/><br/>
+				<p>And this:</p>
+								<img src='assets/img/description-seo.png'/>
+				</li>
+			</ol>
+			<h3>g. Search Form Setting</h3>
+			<p>Change with your URL blog/website:</p>
+						  <pre class="prettyprint">
+&lt;div id=&#039;search-wrapper&#039;&gt;
+  &lt;h4 class=&#039;tetle&#039;&gt;Search This Site&lt;/h4&gt;
+&lt;div id=&#039;search-box&#039;&gt;
+&lt;div itemprop=&#039;mainEntity&#039; itemscope=&#039;itemscope&#039; itemtype=&#039;http://schema.org/WebSite&#039;&gt;
+&lt;meta content=&#039;https://vletterstheme.blogspot.co.id/&#039; itemprop=&#039;url&#039;/&gt;
+  &lt;form action=&#039;https://vletterstheme.blogspot.co.id/search&#039; itemprop=&#039;potentialAction&#039; itemscope=&#039;itemscope&#039; itemtype=&#039;http://schema.org/SearchAction&#039; method=&#039;get&#039; target=&#039;_blank&#039;&gt;
+&lt;meta content=&#039;https://amphtmlproject.blogspot.co.id/search?q={q}&#039; itemprop=&#039;target&#039;/&gt;
+&lt;input class=&#039;search-form&#039; id=&#039;feed-q-input&#039; itemprop=&#039;query-input&#039; name=&#039;q&#039; placeholder=&#039;Search&#039; required=&#039;required&#039; type=&#039;text&#039;/&gt;
+&lt;button class=&#039;search-button&#039; title=&#039;Search&#039; type=&#039;submit&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;&amp;#59574;&lt;/i&gt;&lt;/button&gt;
+  &lt;/form&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		
+							<h3>h. Installation Google Analytics</h3>
+						<p>Find below code, and change <strong>UA-XXXXX-1</strong> with your <i>Google Analytics ID</i></p>
+					<pre class="prettyprint">
+&lt;amp-analytics id=&#039;analytics1&#039; type=&#039;googleanalytics&#039;&gt;
+&lt;script type=&#039;application/json&#039;&gt;
+{
+  &amp;quot;vars&amp;quot;: {
+    &amp;quot;account&amp;quot;: &amp;quot;UA-XXXXX-1&amp;quot;
+  },
+  &amp;quot;triggers&amp;quot;: {
+    &amp;quot;trackPageview&amp;quot;: {
+      &amp;quot;on&amp;quot;: &amp;quot;visible&amp;quot;,
+      &amp;quot;request&amp;quot;: &amp;quot;pageview&amp;quot;
+    }
+  }
+}
+&lt;/script&gt;
+&lt;/amp-analytics&gt;
+						</pre>		
+			
+				</section>
+				
+				
+				
+				<section id="headoptions">
+					<div class="page-header">
+						<h1>Header Options</h1>
+					</div>
+					<h3>Header Title</h3>
+					<ol>
+						<li>Access your blog <span class="label-layout">Layout</span> &gt; click <strong>Header</strong> &gt; click <strong>Edit</strong> &gt; <strong>Edit HTML</strong>
+						</li>					
+					</ol>
+					<h3>Settings Your Blog Posts </h3>
+						<p>In <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; <strong>Blog Posts</strong>, Click on <strong>"Edit"</strong> and applicate all customizing like in folder <strong>SETTINGS</strong>.</p>
+										
+					
+				</section>
+				
+				
+				<section id="menu-setup">
+				
+					<div class="page-header">
+						<h1>Menu Setup</h1>
+					</div>					
+					<h3>Desktop Menu</h3>
+					<ol>
+					<li>First Go to <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; Template &gt; Edit HTML.</li>
+					<li>Find and custmize this code:<p/>
+					<pre class="prettyprint">
+&lt;nav class=&#039;mobile-menu&#039; itemprop=&#039;mainEntity&#039; itemscope=&#039;itemscope&#039; itemtype=&#039;http://schema.org/SiteNavigationElement&#039;&gt;
+ &lt;ul&gt;
+   &lt;li class=&#039;tapping&#039;&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;About&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;info_outline&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;About&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Contact&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;import_contacts&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Contact&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Privacy&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;move_to_inbox&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Privacy&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Sitemap&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;drafts&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Sitemap&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Pasang Iklan&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;public&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Iklan&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+					</pre></li>				
+					</ol>
+					<h3>Mobile Menu</h3>
+					<p>Find and customize this code:</p>
+					<pre class="prettyprint">
+ &lt;nav class=&#039;mobile-menu&#039; itemprop=&#039;mainEntity&#039; itemscope=&#039;itemscope&#039; itemtype=&#039;http://schema.org/SiteNavigationElement&#039;&gt;
+ &lt;ul&gt;
+   &lt;li class=&#039;tapping&#039;&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;About&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;info_outline&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;About&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Contact&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;import_contacts&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Contact&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Privacy&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;move_to_inbox&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Privacy&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Sitemap&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;drafts&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Sitemap&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&#039;#&#039; itemprop=&#039;url&#039; title=&#039;Pasang Iklan&#039;&gt;&lt;i class=&#039;material-icons&#039;&gt;public&lt;/i&gt;&lt;span itemprop=&#039;name&#039;&gt;Iklan&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+					</pre>
+
+				</section>
+
+				
+				
+
+				<section id="widgets">
+					<div class="page-header">
+						<h1>Widgets</h1>
+					</div>
+
+					<h3>Categorys</h3>
+					<p>First Go to <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; then add New Gadget &gt; Labels &gt; select List Option, and you can select custom labels you want to show as categorys.</p>
+					
+					<h3>Tags</h3>
+					<p>First Go to <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; then add New Gadget &gt; Labels &gt; select Cloud Option, and you can select custom labels you want to show as Tags.</p>
+					
+					<h3>Popular Posts</h3>
+					<strong>Recommend options :</strong><br/>
+					<p>First Go to <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; then add New Gadget &gt; Popular Posts &gt; select Thumbnails and Number of Posts</p>
+					
+					<h3>Featured Posts <small>Blogger Widget</small></h3>
+					<p>First Go to <strong>Dashboard</strong> &gt; <span class="label-layout">Layout</span> &gt; then add New Gadget &gt; Featured Posts &gt; select Post you want to show</p>
+
+
+					
+				</section>				
+			
+				<section id="customizations">
+					<div class="page-header">
+						<h1 id="advanced">Customizations</h1>
+					</div>
+							<h3>Every Make New Post</h3>
+						<p>Delete this code, every make new post:</p>
+					<pre class="prettyprint">
+&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot; trbidi=&quot;on&quot;&gt;
+						</pre>
+			
+					<h3>Remove Quickedit</h3>
+					<p>Every add new gadget, dont forget to delete <strong>&lt;name quickedit/&gt;</strong> code from <strong>Edit HTML</strong>.</p>
+				</section>
+				
+				
+				<section id="disqus-comment">
+					<div class="page-header">
+						<h1>Disqus Comment</h1>
+					</div>
+					
+					<p>Find code bellow, change <strong>vletteramp</strong> with your ID of Disqus comment.</p>
+								<pre class="prettyprint">		
+&lt;span class=&#039;show-more disqus-hide&#039;&gt;Add Comments&lt;/span&gt;
+&lt;/h4&gt;
+&lt;span class=&#039;disqus-box&#039;&gt;&lt;amp-iframe expr:src=&#039;&amp;quot;https://cdn.rawgit.com/bungfrangki/themeindie_html/master/disqus_amp2.html?shortname=vletteramp&amp;amp;url=&amp;quot; + data:blog.canonicalUrl&#039; frameborder=&#039;0&#039; height=&#039;300&#039; layout=&#039;responsive&#039; resizable=&#039;resizable&#039; sandbox=&#039;allow-scripts allow-same-origin allow-modals allow-popups allow-forms&#039; width=&#039;600&#039;&gt;
+&lt;div aria-label=&#039;Disqus Comments&#039; overflow=&#039;&#039; role=&#039;button&#039; tabindex=&#039;0&#039;&gt;Disqus Comments&lt;/div&gt;
+  &lt;/amp-iframe&gt;&lt;/span&gt;
+  </pre>
+				</section>
+								
+				
+				
+				<section id="credits">
+					<div class="page-header">
+						<h1>Copyright &amp; Credits</h1>
+					</div>
+								
+					<h3>Other Resources Used</h3>
+						<ul>										
+							<li><a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a></li>					
+							<li><a href="http://fontawesome.io/">FontAwesome</a></li>
+							<li><a href="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">jQuery Library</a></li>	
+							<li><a href="https://highlightjs.org/">highlight</a></li>			
+							<li><a href="https://material.io/icons/">Material Icon</a></li>							
+						</ul>
+					<h3>I wanna appreciation to:</h3>
+<p>Another blog in all arround world, thanks for the tutorials.</p>
+<p>Special thanks to great admin from Kompiajaib.com and Blog.kangismet.net</p>
+				</section>
+
+			</div>
+		</div>
+	</div>
+	<!-- Footer
+		================================================== -->
+	<footer class="footer">
+		<div class="container">
+			<p>Documentation based on the CC 3.0 licensed <a href="http://blog.getbootstrap.com">Twitter Bootstrap</a> and Apache 2.0 licensed <a href="http://bootswatch.com/flatly/">Flatly</a>.</p>
+			<ul class="footer-links">
+				<li><a href="http://www.bungfrangki.com/">Blog</a></li>
+				<li class="muted">&middot;</li>
+				<li><a href="http://www.themeindie.com/p/contact-us.html">Support</a></li>
+				<li class="muted">&middot;</li>
+				<li><a href="https://twitter.com/themeindie">Twitter</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- Le javascript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap-transition.js"></script>
+	<script src="assets/js/bootstrap-alert.js"></script>
+	<script src="assets/js/bootstrap-modal.js"></script>
+	<script src="assets/js/bootstrap-dropdown.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-tab.js"></script>
+	<script src="assets/js/bootstrap-tooltip.js"></script>
+	<script src="assets/js/bootstrap-popover.js"></script>
+	<script src="assets/js/bootstrap-button.js"></script>
+	<script src="assets/js/bootstrap-collapse.js"></script>
+	<script src="assets/js/bootstrap-carousel.js"></script>
+	<script src="assets/js/bootstrap-typeahead.js"></script>
+	<script src="assets/js/bootstrap-affix.js"></script>
+	<script src="assets/js/holder/holder.js"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/application.js"></script>
+</body>
+</html>
